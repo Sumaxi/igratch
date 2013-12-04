@@ -1,0 +1,29 @@
+<template name="commenting">
+	<div class="medium center panel">
+		<div class="medium center text_center">
+			{{> comments}}
+		</div>
+		
+		<form class="medium center">
+			{{> commentator}}
+		</form>
+	</div>
+</template>
+
+<template name="comments">
+	{{#each comments}}
+		<hr>
+		<b>{{name}}</b>
+		<p>{{comment}}</p>
+	{{/each}}
+</template>
+
+<template name="commentator">
+	{{#if user}}
+		<input type="text" placeholder="Username" value="{{user.username}}" name="commentator_name">
+	{{else}}
+		<input type="text" placeholder="Username" name="commentator_name">
+	{{/if}}
+	<textarea placeholder="Comment" name="commentator_comment"></textarea>
+	<input type="submit" name="commentator_submit" value="Submit">
+</template>

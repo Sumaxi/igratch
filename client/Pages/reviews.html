@@ -1,0 +1,38 @@
+<template name="review">
+	<h1>Reviews</h1>
+	{{#each game}}
+		<div class="article panel">
+			<div class="img">
+				<img src="http://www.bubblews.com/assets/images/news/367161018_1359046625.jpg">
+			</div>
+			
+			<div class="description">
+				<p> {{title}} by {{author}} a {{score}} game. </p>
+				<a href="{{pathFor 'game_item'}}"><button>Read More</button></a>
+			</div>
+		</div>
+	{{/each}}
+</template>
+
+
+<template name="review_item">
+	<div class="article_full panel">
+		<h2> {{title}} <small> by {{author}} </small> </h2>
+		<div class="img">
+			<img src="http://www.bubblews.com/assets/images/news/367161018_1359046625.jpg">
+		</div>
+		
+		<div class="description_options">
+			<ul>
+				<li><p>4/5 Score</p></li>
+				<li><p>$10</p></li>
+				<li><p>Windows / Mac / Linux</p></li>
+			</ul>
+		</div>
+		
+		<div class="description_full">
+			<p> {{description}}</p>
+		</div>
+	</div>
+	{{> commenting}}
+</template>

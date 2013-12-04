@@ -1,0 +1,543 @@
+/* IGratch CSS Copyrighted @ 2013 Maxim Podolski
+ * The CSS is seperated into Content, Input , Typography, Navigation, and Default
+ */
+
+/* ********************* Content ********************* */
+div {
+	overflow:hidden;
+}
+
+form {
+	overflow:hidden;
+}
+
+img {
+	position:relative;
+	overflow:hidden;
+}
+
+.main {
+	position:static;
+	margin-top:0;
+	margin-left:2%;
+	margin-right:2%;
+	padding-top:0;
+	padding-bottom:30px;
+	background: white;
+	border-top:30px solid #ADD6FF;
+	border-left:20px solid #ADD6FF;
+	border-right:20px solid #ADD6FF;
+}
+
+.content {
+	padding:30px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+.panel {
+	border: 1px solid #CFCFCF;
+}
+
+.panel.content {
+	padding:30px;
+	padding-bottom:0px
+}
+
+.center {
+	margin: 0px auto;
+	margin-top:20px;
+	margin-bottom:30px;
+}
+
+.left {
+	position:relative;
+	display:block;
+	width:50%;
+	float:left;
+}
+
+.right {
+	position:relative;
+	display:block;
+	width:50%;
+	float:right;
+}
+
+.small {
+	width: 50%;
+}
+
+.medium {
+	width: 70%;
+}
+
+.big {
+	width: 90%;
+}
+
+div {
+	min-width:250px;
+}
+
+div div {
+	min-width:225px;
+}
+
+div div div {
+	min-width:200px;
+}
+
+span {
+	font-weight:inherit;
+	font-style:inherit;
+	line-height:inherit;
+	width:100%;
+	display:block;
+	position:absolute;
+	text-align:center;
+}
+
+hr {
+	border: 0;
+	border-top:1px solid #CFCFCF;
+}
+
+hr.double {
+	border-top: 1px solid #CFCFCF;
+	border-bottom: 1px solid #CFCFCF;
+}
+
+.hr {
+	height:1px;
+	background-color:#CFCFCF;
+}
+
+.hr>span {
+	top:-25px;
+	width: 20%;
+	margin-left:40%;
+	margin-right:40%;
+	background-color:white;
+	border:1px solid #CFCFCF;
+}
+
+.accent {
+	margin-top:50px;
+	border-bottom:1px solid #CFCFCF;
+	width:100%;
+}
+
+.accent>span {
+	top:-50px;
+	width: 20%;
+	margin-top:5px;
+	margin-left:40%;
+	margin-right:40%;
+	background-color:white;
+	border-left:1px solid #CFCFCF;
+	border-right:1px solid #CFCFCF;
+}
+.outline>span {
+	top:-4px;
+	left:-2px;
+	background-color:transparent;
+	opacity:1;
+	color:#303030;
+}
+
+.title_img {
+	top:-30px;
+	background-color:white;
+	opacity:.3;
+	color: #303030;
+}
+
+.article {
+	position:relative;
+	border:1px solid #CFCFCF;
+	float:center;
+	left:10%;
+	right:10px;
+	width:80%;
+	min-width:230px;
+	margin-bottom:50px;
+}
+
+.article_full {
+	position:relative;
+	border:1px solid #CFCFCF;
+	float:center;
+	left:10%;
+	right:10px;
+	width:80%;
+	min-width:230px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.img {
+	height:200px;
+}
+
+.description {
+	text-align:center;
+}
+
+.description_full {
+	padding-left:40px;
+	padding-right:40px;	
+}
+
+.description_options ul {
+	border-bottom: 1px solid #CFCFCF;
+	list-style-type:none;
+	margin:0;
+	text-align:center;
+}
+.description_options li {
+	margin-right:5px;
+	text-align:center;
+	display:inline;
+}
+
+.description_options p {
+	display: inline-block;
+	padding-left:10px;
+	padding-right:10px;
+	border-right:1px solid #CFCFCF;	<h2>Messager</h2>
+	<p class="big text_center">Send Messages to your Friends! </p>
+}
+
+.description_options p:first-of-type {
+	border-left:1px solid #CFCFCF;
+}
+
+.reader {
+	height:40px;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+.read {
+	position:relative;
+}
+
+.read:hover {
+	animation: read 10s;
+	-webkit-animation: read 10s;
+}
+
+/* ********************* Input ********************* */
+form {
+	border-left: 1px solid #CFCFCF;
+	border-right: 1px solid #CFCFCF;
+	font-size:1em;
+	font-family:Ubuntu;
+	line-height:inherit;
+	word-spacing:inherit;
+	color:#434343;;
+	text-align:center;
+	min-width:150px;
+}
+
+input,textarea,button {
+	margin-bottom:20px;
+	padding:0px;
+	font:inherit;
+	text-align:center;
+	color:inherit;
+}
+
+form input,form textarea,form button {
+	margin-bottom:30px;
+}
+
+input {
+	background:transparent;
+	width:100%;
+	padding-top:10px;
+	padding-bottom:10px;
+	border: 0px;
+	border-top: 1px solid #CFCFCF;
+	border-bottom: 1px solid #CFCFCF;
+}
+
+input[type="submit"] {
+	margin-bottom:0px;
+}
+
+input:active {
+	border-left:0px;
+	border-right:0px;
+	border-bottom:1px solid #CFCFCF;
+	outline:0px;
+}
+
+button {
+	font:inherit;
+	background:transparent;
+	border:0px;
+	border-top: 1px solid #CFCFCF;
+	width:100%;
+	height:40px;
+	border-left:0px;
+	border-right:0px;
+	border-bottom: 1px solid #CFCFCF;
+	-webkit-transition: color 10000ms ease, all 1000ms ease;
+	-o-transition: color 1000ms ease, all 1000ms ease;
+	transition: color 1000ms ease, all 1000ms ease;
+}
+
+button:hover {
+	width:75%;
+	border-top: 1px solid #DFDFDF;
+	border-bottom: 1px solid #DFDFDF;
+	color:white;
+	background-color:#99CCFF;
+}
+
+textarea {
+	width:99.6%;
+	height:100px;
+	border-right:0px;
+	border-left:0px;
+	border-top: 1px solid #CFCFCF;
+	border-bottom: 1px solid #CFCFCF;
+	padding-right:0px;
+	padding-left:0px;
+	padding-top:10px;
+	padding-bottom:10px;
+	outline:0px;
+}
+
+textarea:hover {
+	border-right:0px;
+	border-left:0px;
+	padding-right:0px;
+	padding-left:0px;
+	outline:0px;
+}
+
+
+
+/* ********************* Typography ********************* */
+h1, h2, h3, h4, h5, h6 {
+	font-family: Ubuntu, Arial, Verdana, sans-serif;
+	text-align: center;
+	word-spacing: 5px;
+	color: #666666;
+	margin-bottom:10px;
+	margin-top:5px;
+}
+
+h1 {
+	line-height:150%;
+	font-size: 2.5em;
+	font-weight: 900;
+}
+
+h2 {
+	font-size:2em;
+	font-weight: 500;
+}
+
+h3 {
+	font-size: 1.5em;white-space
+	font-weight: normal;
+}
+
+h4 {
+	font-size: 1.8em;
+	font-weight:150;
+}
+
+h5 {
+	font-size: 1.6em;
+	font-weight:150;
+	color: #4C4C4C;
+}
+
+h6 {
+	font-size: 1.1em;
+	font-weight:100;
+	font-style: italic;
+}
+
+p, a,b,small {
+	position:relative;
+	font-size: 1.1em;
+	font-weight:100;
+	font-style:normal;
+	text-decoration:none;
+	line-height:1.1;
+	font-family: Ubuntu, droid-sans;
+	color: #272727;
+}
+
+p {
+	margin-top:5px;
+	margin-bottom:5px;
+	white-space: pre !important;
+	white-space: pre-wrap !important;
+	white-space: pre-line !important;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	white-space: -moz-pre-wrap;
+	letter-spacing: normal;
+	font-style: normal;
+	line-height: 1.5;
+}
+
+small {
+	color:#8b8b8b;
+	font-size:.8em;
+}
+
+b {
+	font-weight:700;
+}
+
+div.article > div,a,p {
+	color:#434343;
+}
+
+h2 small {
+	color:#a8a8a8;
+}
+
+h1.outline, h2.outline, h3.outline, h4.outline, h5.outline, h6.outline, p.outline {
+	opacity:0.3;
+}
+
+.text_small {
+	font-size: .8em;
+	line-height: 80%;
+}
+
+.text_medium {
+	font-size: 1.1em;
+	line-height: 110%;
+	
+}
+
+.text_big {
+	font-size: 1.2em;
+	color: #333333;
+	text-align: center;
+	line-height:120%;
+}
+
+.text_large {
+	font-size: 1.3em;
+	color: #434343;
+	text-align: center;
+	line-height:130%;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.text_left {
+	text-align: left;
+}
+
+div.article > p {
+	line-height:0.5;
+}
+
+.title {
+	font-weight:400;
+	font-size: 1.2em;
+	color: #0000FF;
+}
+
+.type {
+	font-weight:400;
+	font-size: 1.2em;
+	color: #0000FF;
+}
+
+.author {
+	font-size:1em;
+}
+
+.date {
+	font-size:1em;
+	font-style:italic;
+	color: #4C4C4C;
+}
+
+
+/* ********************* Navigation ********************* */
+.nav {
+	top:0px;
+	width: 100%;
+}
+
+.nav ul {
+	border-bottom: 1px solid #CFCFCF;
+	list-style-type:none;
+	margin:0;
+	padding-top: 35px;
+	padding-bottom:20px;
+	text-align:center;
+}
+.nav li {
+	margin-right:30px;
+	text-align:center;
+	display:inline;
+}
+
+.nav a {
+	font-size:1.4em;
+	font-weight:700;
+	display: inline-block;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:5px;
+	padding-top:2px;
+	color:#99CCFF;
+	-webkit-transition: color 10000ms ease, all 1000ms ease;
+	-o-transition: color 1000ms ease, all 1000ms ease;
+	transition: color 1000ms ease, all 1000ms ease;
+}
+
+.nav a:hover {
+	color:#2a6496;
+	color:white;
+	background-color:#99CCFF;
+}
+
+.nav li.name a {
+	color:#2a6496;
+}
+
+/* ********************* Animations ********************* */
+@keyframes read
+{
+	0% {bottom:0}
+	100% {bottom:200px}
+}
+
+@-webkit-keyframes read /* Safari and Chrome */
+{
+	0% {bottom:0}
+	100% {bottom:200px}
+}
+
+
+/* ********************* Default ********************* */
+html {
+	background-color:#99CCFF;
+}
+
+body {
+	margin: 0px auto;
+	font-size:150%;
+}

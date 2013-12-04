@@ -1,0 +1,94 @@
+<template name="account">
+	<h1>Account Page</h1>
+	{{#if account}}
+		<div class="center">
+			{{> account_page_user}}
+			{{#if reviewer}}
+				{{> account_page_reviewer}}
+			{{/if}}
+			{{#if developer}}
+				{{> account_page_developer}}
+			{{/if}}
+		</div>
+	{{else}}
+		<div class="center small">
+			{{> sign_in}}
+			<br>
+			{{> sign_up}}
+		</div>
+	{{/if}}
+</template>
+
+<template name="sign_in">
+	<h3> Sign In </h3>
+	<form class="medium center">
+		<input type="text" name="username_in" placeholder="username">
+		<input type="password" name="userpass_in" placeholder="password">
+		<input type="submit" name="submit_in" value="Submit">
+	</form>
+</template>
+
+<template name="sign_up">
+	<h3> Sign Up </h3>
+	<form class="medium center">
+		<input type="text" name="username_up" placeholder="username">
+		<input type="password" name="userpass_up" placeholder="password">
+		<input type="password" name="userpass_up_confirm" placeholder="password confirm">
+		<input type="submit" name="submit_up" value="Submit">
+	</form>
+</template>
+
+<template name="sign_out">
+	<form>
+		<input type="submit" name="submit_out" value="Log Out">
+	</form>
+</template>
+
+<template name="account_page_user">
+	{{> upload}}
+	<br><br>
+	{{> messaging}}
+	<br> <br>
+	{{> sign_out}}
+</template>
+
+<template name="messaging">
+	<div class="panel medium center">
+		<h3>Notifications</h3>
+		{{> notifications}}
+		{{> messager}}
+	</div>
+</template>
+
+<template name="notifications">
+	<div class="medium center text_center">
+		{{#each notification}}
+			{{#if message}}
+				<b>{{title}} <small>Message</small></b>
+				<p>{{message}} from <b><small>{{author}}</small></b></p>
+				<hr>
+			{{/if}}
+			
+			{{#if comment}}
+				<b>{{title}} <small>Comment</small></b>
+				<p>{{comment}} from <b><small>{{author}}</small></b></p>
+				<hr>
+			{{/if}}
+			
+			{{#if request}}
+				<b>{{title}} <small>Request</small></b>
+				<p>{{request}} from <b><small>{{author}}</small></b></p>
+			{{/if}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="messager">
+	<form class="medium center">
+		<input type="text" name="messager_target" placeholder="Target">
+		<input type="text" name="messager_title" placeholder="Title">
+		<textarea name="messager_message" placeholder="Message"></textarea>
+		<input type="submit" name="messager_submit" value="Submit">
+	</form>
+</template>
+		

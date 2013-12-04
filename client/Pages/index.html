@@ -1,0 +1,22 @@
+<template name="index">
+	<h1> Welcome to IGratch </h1>
+	<div class="reader">
+		<div class="read">
+			<p class="text_center text_large"> Games are Great, Games are fun </p>
+			<p> Friends are Great, Friends are Fun </p>
+			<p> Together ... it's <b> AWESOME </b> </p>
+		</div>
+	</div>
+	{{#each game}}
+		<div class="article panel">
+			<div class="img">
+				<img src="http://www.bubblews.com/assets/images/news/367161018_1359046625.jpg">
+			</div>
+			
+			<div class="description">
+				<p> <b>{{title}}</b> by {{author}}</p>
+				<a href="{{pathFor 'game_item'}}"><button>Read More</button></a>
+			</div>
+		</div>
+	{{/each}}
+</template>

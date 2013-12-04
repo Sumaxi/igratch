@@ -1,0 +1,26 @@
+<template name="upload">
+	{{> queueControl}}
+	<br> <br>
+	{{> fileTable}}
+	<br> <hr>
+	{{> images}}
+</template>
+
+<template name="queueControl">
+	<h3>Select file(s) to upload:</h3>
+	<input name="files" type="file" class="fileUploader" multiple>
+</template>
+
+<template name="fileTable">
+    {{#each files}}
+    	{{cfsDownloadButton "ContactsFS" class="btn" content=filename}}
+    {{else}}
+    	No files uploaded.
+    {{/each}}
+</template>
+
+<template name="images">
+	{{#each cfsFiles "Images"}}
+		<img src="{{_id}}" />
+    {{/each}}
+</template>
